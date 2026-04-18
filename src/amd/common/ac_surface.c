@@ -1976,8 +1976,8 @@ static int gfx9_get_preferred_swizzle_mode(struct ac_addrlib *addrlib, const str
        */
       if (in->numSamples == 1 ||
           surf->flags & (RADEON_SURF_PREFER_64K_ALIGNMENT | RADEON_SURF_PREFER_4K_ALIGNMENT)) {
-         sin.forbiddenBlock.gfx11.thin256KB = 1;
-         sin.forbiddenBlock.gfx11.thick256KB = 1;
+         sin.forbiddenBlock.gfx11.thin256KB = 0;
+         sin.forbiddenBlock.gfx11.thick256KB = 0;
       }
    }
 
